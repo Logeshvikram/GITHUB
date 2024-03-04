@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        email
+    </label>
+
+
+    <script>
+        function func() {
+            let a = document.getElementById("val").value
+            let pattern = /^[a-z][\d]{9}$/g
+            if (pattern.test(a)) {
+                alert("correct")
+            }
+            else {
+                alert("ph no invalid")
+            }
+        }
+    </script>
+    <br><br>
+    <input type="text" id="val"> <br><br>
+    <button onclick="func()">login</button>
+</body>
+
+</html>
